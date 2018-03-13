@@ -1,0 +1,23 @@
+{
+  "name": "init-array",
+  "version": "1.0.0",
+  "description": "Creates new array with defined size and initial value",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saveryanov/init-array.git"
+  },
+  "keywords": [
+    "init",
+    "array"
+  ],
+  "author": "Sergey Averyanov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saveryanov/init-array/issues"
+  },
+  "homepage": "https://github.com/saveryanov/init-array#readme"
+}
