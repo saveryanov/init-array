@@ -1,5 +1,7 @@
 # init-array
 
+[![NPM version](https://img.shields.io/npm/v/init-array.svg)](https://www.npmjs.com/package/init-array)
+
 Creates new array with defined size and initial value
 
 ## Install
