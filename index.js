@@ -1,3 +1,7 @@
+function isFunction(functionToCheck) {
+    return functionToCheck && {}.toString.call(functionToCheck) === '[object Function]';
+}
+
 function newArray(shape, value = 0) {
     var arr = [];
 
@@ -10,10 +14,10 @@ function newArray(shape, value = 0) {
         for (let i = 1; i < shape.length; i++) {
             newShape.push(shape[i]);
         }
-        arr = new Array(shape[0]).fill(value);
-        arr = arr.map(() => newArray(newShape, value));
+        arr = new Array(shape[0]).fill(isFunction(value) ? value() : value);
+        arr = arr.map(() => newArray(newShape, isFunction(value) ? value() : value));
     } else {
-        arr = new Array(shape).fill(value);
+        arr = new Array(shape).fill(isFunction(value) ? value() : value);
     }
     return arr;
 }
