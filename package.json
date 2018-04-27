@@ -1,10 +1,10 @@
 {
   "name": "init-array",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Creates new array with defined size and initial value",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --reporter spec"
   },
   "repository": {
     "type": "git",
@@ -18,9 +18,16 @@
     "dimensions"
   ],
   "author": "Sergey Averyanov",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/saveryanov/init-array/issues"
   },
-  "homepage": "https://github.com/saveryanov/init-array#readme"
+  "homepage": "https://github.com/saveryanov/init-array#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.1.1"
+  },
+  "directories": {
+    "test": "test"
+  }
 }

@@ -6,7 +6,7 @@ Creates new array with defined size and initial value
 
 ## Install
 
-```
+```commandline
 npm install --save init-array
 ```
 
@@ -35,4 +35,10 @@ newArray(3, Math.random);   // [ 0.5508887629402555, 0.7256682864214947, 0.89162
 
 var i = 0;
 initArray([2,2], () => i++) // [ [ 0, 1 ], [ 2, 3 ] ]
+```
+
+## Testing
+
+```commandline
+npm test
 ```
