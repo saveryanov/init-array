@@ -14,10 +14,13 @@ function newArray(shape, value = 0) {
         for (let i = 1; i < shape.length; i++) {
             newShape.push(shape[i]);
         }
-        arr = new Array(shape[0]).fill(isFunction(value) ? value() : value);
-        arr = arr.map(() => newArray(newShape, isFunction(value) ? value() : value));
+        arr = new Array(shape[0]).fill(0);
+        arr = arr.map(() => newArray(newShape, value));
     } else {
-        arr = new Array(shape).fill(isFunction(value) ? value() : value);
+        arr = new Array(shape).fill(0);
+        for (let i in arr) {
+            arr[i] = isFunction(value) ? value() : value;
+        }
     }
     return arr;
 }

@@ -31,5 +31,8 @@ newArray([2, 3], 1);    // [ [ 1, 1, 1 ], [ 1, 1, 1 ] ]
 If value argument is function then executes this function for each element.
 
 ```javascript
-newArray(3, Math.random);  // [ 0.5508887629402555, 0.7256682864214947, 0.8916228685296357 ]
+newArray(3, Math.random);   // [ 0.5508887629402555, 0.7256682864214947, 0.8916228685296357 ]
+
+var i = 0;
+initArray([2,2], () => i++) // [ [ 0, 1 ], [ 2, 3 ] ]
 ```
